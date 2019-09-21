@@ -13,4 +13,13 @@ Hako is a data system that aims to consolidate all possible forms of data into o
 
 Hako was designed initially as a response to the growing complexity of starting pet projects and outgrowing large dependencies on rapidly changing ecosystems (see: web development, SPAs). I hope to develop a system where developers and content creators can define projects and data on their own terms.
 
-*to be continued (with examples!)...*
+## I want to see examples!
+
+Sure thing! Head over to the `examples` folder to see examples of Hako in play. Some examples to note:
+
+| Path | Description | Status |
+| --- | --- | --- |
+| ![webapp-henlo](examples/webapp-henlo) | Say henlo (hello world) in a web app! | Version 1.0 |
+| ![webapp-jukebox](examples/webapp-jukebox) | Make a shared jukebox system where users can collaboratively queue music | In Progress |
+
+More to be planned soon!

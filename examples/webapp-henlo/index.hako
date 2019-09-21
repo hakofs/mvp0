@@ -1,0 +1,43 @@
+/**
+    Welcome to the first example of the Hako format!
+    We are going to be applying Hako to
+    creating a reactive web app in less than 30 lines(*) of
+    declarative code.
+
+    Let's say henlo to the world with this first example.
+
+    (*) The 30 lines leave out the default web components
+    that should come bundled with hako
+
+    == UPDATES ==
+    9/21/2019 - Added index.hako to mvp0
+    9/09/2019 - Created "Hello World" declr-web example
+
+    Copyright (c) 2019 Kevin Mo.
+
+ */
+
+ [!doctype html]
+
+ [!meta]
+    [title] "Declarative Web says Henlo World!"
+    [created]
+    - date dt'2019/09/09'
+    - author "encadyma"
+    - version 1.0
+    - git "https://github.com/hakofs/mvp0.git"
+
+[h1 #heading] "Henlo world!"
+[p] "Don't just stand there! Come say henlo to us personally. :D"
+
+[null]
+    [input-text #user-name]
+    - placeholder "Enter your name here!"
+
+    [button]
+    - title "Say henlo!"
+    - @click {
+        // This is Javascript with some nice syntactic sugar.
+        // Let's see how we can directly access DOM elements!
+        #heading.value = "Henlo" + #user-name.value;
+    }
