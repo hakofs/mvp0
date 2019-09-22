@@ -1,0 +1,50 @@
+/**
+    Welcome to the second example of the Hako format!
+    This time, we are going to be use Hako to write 
+    out a web app that can let other users to queue music
+    up.
+
+    One of the coolest parts of building ambitious web apps
+    on Hako is that you can plan out your framework 
+    on the Hako documents themselves as pseudo-code first, 
+    then fill in the actual parts later without 
+    many changes. This means that your web app code
+    can double as a human-readable planning document! The
+    goal is for developers to start cracking away at their
+    project ideas by just opening a code editor and writing
+    Hako code, no setup needed upfront.
+
+    For an example, feel free to browse the git repo's 
+    commit history to see how the entire project shaped over time.
+    
+    == UPDATES ==
+    9/21/2019 - Wrote out version 0.1 by copying Henlo.
+
+    Copyright (c) 2019 Kevin Mo.
+
+ */
+
+ [!doctype html]
+
+ [!meta]
+    [title] "Jukehako"
+    [created]
+    - date dt'2019/09/21'
+    - author "encadyma"
+    - version 0.1
+    - git "https://github.com/hakofs/mvp0.git"
+
+[h1 #heading] "Henlo world!"
+[p] "Don't just stand there! Come say henlo to us personally. :D"
+
+[null]
+    [input-text #user-name]
+    - placeholder "Enter your name here!"
+
+    [button]
+    - title "Say henlo!"
+    - @click {
+        // This is Javascript with some nice syntactic sugar.
+        // Let's see how we can directly access DOM elements!
+        #heading.value = "Henlo" + #user-name.value;
+    }
