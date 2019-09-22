@@ -17,9 +17,9 @@
 
  */
 
- [!doctype html]
+[!doctype html]
 
- [!meta]
+[!meta]
     [title] "Declarative Web says Henlo World!"
     [created]
     - date dt'2019/09/09'
