@@ -18,33 +18,42 @@
     commit history to see how the entire project shaped over time.
     
     == UPDATES ==
-    9/21/2019 - Wrote out version 0.1 by copying Henlo.
+    9/21/2019   - Wrote out version 0.1 by copying Henlo.
+                - Wrote out draft of planning document in version 0.2.
 
     Copyright (c) 2019 Kevin Mo.
 
  */
 
- [!doctype html]
+[!doctype html]
 
- [!meta]
+[!meta]
     [title] "Jukehako"
     [created]
     - date dt'2019/09/21'
     - author "encadyma"
-    - version 0.1
+    - version 0.2
     - git "https://github.com/hakofs/mvp0.git"
 
-[h1 #heading] "Henlo world!"
-[p] "Don't just stand there! Come say henlo to us personally. :D"
 
-[null]
-    [input-text #user-name]
-    - placeholder "Enter your name here!"
+// Design note: mark "comment" components by
+// writing a ? after the name. These will be wholly
+// ignored from component matching until you remove it!
+// Use this for hypothetical placements.
 
-    [button]
-    - title "Say henlo!"
-    - @click {
-        // This is Javascript with some nice syntactic sugar.
-        // Let's see how we can directly access DOM elements!
-        #heading.value = "Henlo" + #user-name.value;
-    }
+[data?]
+* queue (centralized)
+* mixtapes (local)
+* users (centralized? websocket connections maybe)
+* state (centralized store to represent music daemon state)
+
+[design?]
+* should have a footer where users can queue music
+* should have a music search view where users can add YT/Soundcloud links
+* should show "now playing" on the header
+* should show what other people have queued up
+* should allow users to vote skip and change music volume
+
+[tests?]
+// TODO: write some neat tests
+* no tests for now
